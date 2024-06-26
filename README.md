@@ -20,7 +20,7 @@ Welcome to the Sorting Algorithms Visualizer! This project is a web-based applic
 
 ## Demo
 
-![Sorting Algorithms Visualizer Demo](https://smil-thakur.github.io/Sort-Visualizer/)
+https://smil-thakur.github.io/Sort-Visualizer/
 
 ## Getting Started
 
