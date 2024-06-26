@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sort visualizer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="title">
+        Sort visualizer
+    </div>
+    <div class="radio-btn-container">
+        <input type="radio" id="sort1" name="sort" value="bubble" />
+        <label for="sort1">Bubble Sort</label>
+
+        <input type="radio" id="sort2" name="sort" value="selection" />
+        <label for="sort2">Selection Sort</label>
+
+        <input type="radio" id="sort3" name="sort" value="merge" />
+        <label for="sort3">Merge Sort</label>
+
+        <input type="radio" id="sort4" name="sort" value="insertion" />
+        <label for="sort4">Insertion Sort</label>
+    </div>
+    <canvas id="renderer" width="800px" height="500px"></canvas>
+    <div id="sorting-indicator">
+        Sorting in Progress!
+        <img src="loading.gif" alt="loading indicator">
+    </div>
+    <div class="action-buttons">
+        <button id="go">Go</button>
+        <button id="unsort">Unsort</button>
+        <button id="stop">Stop</button>
+    </div>
+    <div class="range-container">
+        <label for="sleepRange">Delay between swapings</label>
+        <input type="range" name="sleep" id="sleepRange" min="0" max="50" value="10">
+        <div id="Sleepvalue">10</div>
+    </div>
+    <textarea name="array" id="array" placeholder="enter your array here, comma separated!"></textarea>
+
+    <div class="footer">
+        <a href="https://github.com/smil-thakur">SMIL RAJ THAKUR</a>
+    </div>
+</body>
+<script src="index.js"></script>
+
+</html>
